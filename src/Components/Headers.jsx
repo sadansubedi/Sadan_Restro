@@ -46,8 +46,7 @@ const Headers = () => {
 
   useEffect(()=>{
     total()
-  },[total]);
-
+  },[total]);  //it means the effect depends on the total variable. This implies that whenever the value of total changes, the effect will be triggered again.
   return (
    <>
     <Navbar bg="dark" variant="dark" className='my-3'>
