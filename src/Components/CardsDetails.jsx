@@ -14,7 +14,7 @@ const CardsDetails = () => {
   const getdata = useSelector((state)=>state.cartreducer.carts);
   //console.log(getdata);
 
-  const dispatch =useDispatch();
+  const dispatch =useDispatch();//dispatch work is to call to action.js of action folder
   const history =useNavigate();
   const compare =()=>{
     const comparedata = getdata.filter((e)=>{
